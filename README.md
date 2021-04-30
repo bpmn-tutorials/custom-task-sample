@@ -1,4 +1,4 @@
-# org.kie.kogito.kogito-quarkus-archetype - 1.4.0.Final #
+# Sample of the custom task in Kogito #
 
 ![Sample image](./src/main/resources/test-process-svg.svg)
 
@@ -20,23 +20,11 @@
 
 # Test your application
 
-Generated application comes with sample test process that allows you to verify if the application is working as expected. Simply execute following command to try it out
+Following command will call the process, pass the `some value` to the custom task and print some output.
 
 ```sh
 curl -X POST "http://localhost:8080/greetings" -H  "accept: */*" -H  "Content-Type: application/json" -d "{\"input\":\"some value\"}"
 ```
-
-Once successfully invoked you should see "Hello World" in the console of the running application.
-
-The generated application provides out of the box multiple samples of Kogito assets; you can reference the generated Swagger documentation and JUnit tests.
-
-# Developing
-
-Add your business assets resources (process definition, rules, decisions) into src/main/resources.
-
-Add your java classes (data model, utilities, services) into src/main/java.
-
-Then just build the project and run.
 
 
 # OpenAPI (Swagger) documentation
