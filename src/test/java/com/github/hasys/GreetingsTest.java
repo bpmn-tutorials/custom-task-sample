@@ -40,5 +40,4 @@ public class GreetingsTest {
             .header("Location", notNullValue())
             .body("id", notNullValue());
     }
-
 }
